@@ -15,7 +15,7 @@ Ejercicios de programación para el curso Fundamentos de Programacion (FPY1101) 
 4. Estructuras de repetición en Python
 5. Resolviendo problemas con Python
 
-# Experiencia 03
+## Experiencia 03
 1. Coleccione en Python
 2. Trabajando con diccionarios, set y tuplas
 3. Uso de archivos en Python

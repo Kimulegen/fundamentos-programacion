@@ -16,7 +16,7 @@ Ejercicios de programación para el curso Fundamentos de Programacion (FPY1101) 
 5. Resolviendo problemas con Python
 
 ## Experiencia 03
-1. Coleccione en Python
+1. Colecciones en Python
 2. Trabajando con diccionarios, set y tuplas
 3. Uso de archivos en Python
 4. Funciones en Python

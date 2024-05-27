@@ -1,0 +1,20 @@
+Algoritmo verificar_edad
+    Definir edad como Entero
+    Escribir "Ingrese su edad"
+// asumiendo que edad es positiva
+    Leer edad
+
+    Si edad >= 65 Entonces
+        Escribir "su ticket cuesta $1500"
+    SiNo
+        Si edad >= 18 Entonces
+            Escribir "su ticket cuesta $2000"
+        SiNo
+            Si edad >= 10 Entonces
+                Escribir "su ticket cuesta $1000"
+            SiNo
+                Escribir "su entrada es gratuita!"
+            FinSi
+        FinSi
+    FinSi
+FinAlgoritmo

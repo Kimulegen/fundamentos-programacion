@@ -1,5 +1,11 @@
+#! Python3
+# Supermarket simulator, where you can add products, see your products and see the total cost of the purchase
+
+# initialize variables
 canasta = {}
 total = 0
+
+# main menu
 while True:
     print('*'*15, 'Menú', '*'*15)
     print('1. Agregar productos')
@@ -9,6 +15,7 @@ while True:
     choice = input('> ')
     print()
 
+    # add products feature
     if choice == '1':
         print('Seleccione producto a agregar')
         print('1. Arroz $2350')
@@ -39,13 +46,23 @@ while True:
             canasta.setdefault('cereal', 0)
             canasta['cereal'] += 1
             total += 2690
-        
+
+    # print all products feature
     elif choice == '2':
         for k,v in canasta.items():
             print(f'{v} {k}')
         print()
+
+    # show total feature
     elif choice == '3':
         print(f'Su total a pagar es: {total}')
         print()
+
+    # exit menu
     elif choice == '4':
         break
+
+    # catch all in case user inputs invalid option
+    else:
+        os.system('cls||clear')
+        print("Error, opción inválida\n")

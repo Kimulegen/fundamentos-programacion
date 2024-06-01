@@ -1,6 +1,13 @@
+#! Python3
+# Menu where user can sign in, add and delete users
+
+# importing os to use clear
 import os
 
+# initialize variables
 users = {}
+
+# main menu
 while True:
     print(' Menú '.center(30, "="))
     print('1. Iniciar sesión')
@@ -9,6 +16,7 @@ while True:
     print('4. Salir')
     choice = input('> ')
 
+    # sign in feature
     if choice == '1':
         user = input('Ingrese su usuario\n> ')
         if user not in users:
@@ -28,6 +36,7 @@ while True:
         os.system('cls||clear')
         print(f'Bienvenido {user}\n')
 
+    # add user feature
     elif choice == '2':
         print('Registro de usuario')
         user = input('usuario: ')
@@ -40,6 +49,7 @@ while True:
         os.system('cls||clear')
         print('Usuario registrado con éxito\n')
 
+    # delete user feature
     elif choice == '3':
         user = input('Ingrese el usuario a eliminar\n> ')
         if user not in users:
@@ -57,9 +67,11 @@ while True:
         os.system('cls||clear')
         print('Usuario eliminado con éxito\n')
 
+    # exit menu
     elif choice == '4':
         break
 
+    # catch all in case user inputs an invalid option
     else: 
         os.system('cls||clear')
         print("Error, opción inválida\n")

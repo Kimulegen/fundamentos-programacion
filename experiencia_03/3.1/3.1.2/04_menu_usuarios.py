@@ -1,6 +1,8 @@
+import os
+
 users = {}
 while True:
-    print('*'*15, 'Menú', '*'*15)
+    print(' Menú '.center(30, "="))
     print('1. Iniciar sesión')
     print('2. Registrar usuario')
     print('3. Eliminar usuario')
@@ -10,14 +12,21 @@ while True:
     if choice == '1':
         user = input('Ingrese su usuario\n> ')
         if user not in users:
-            print('No hay usuarios registrados con ese nombre')
+
+            os.system('cls||clear')
+            print('No hay usuarios registrados con ese nombre\n')
+
             continue
         psswrd = input('Ingrese su contraña\n> ')
         if users[user] != psswrd:
-            print('Contraseña incorrecta')
+
+            os.system('cls||clear')
+            print('Contraseña incorrecta\n')
+
             continue
 
-        print(f'Bienvenido {user}')
+        os.system('cls||clear')
+        print(f'Bienvenido {user}\n')
 
     elif choice == '2':
         print('Registro de usuario')
@@ -28,7 +37,8 @@ while True:
             continue
         users[user] = psswrd
 
-        print('Usuario registrado con éxito')
+        os.system('cls||clear')
+        print('Usuario registrado con éxito\n')
 
     elif choice == '3':
         user = input('Ingrese el usuario a eliminar\n> ')
@@ -37,10 +47,19 @@ while True:
             continue
         psswrd = input('Confirme la eliminación ingresando contraseña\n> ')
         if users[user] != psswrd:
-            print('Contraseña incorrecta')
+
+            os.system('cls||clear')
+            print('Contraseña incorrecta\n')
+
             continue
         del users[user]
-        print('Usuario eliminado con éxito')
+
+        os.system('cls||clear')
+        print('Usuario eliminado con éxito\n')
 
     elif choice == '4':
         break
+
+    else: 
+        os.system('cls||clear')
+        print("Error, opción inválida\n")

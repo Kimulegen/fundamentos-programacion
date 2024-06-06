@@ -1,10 +1,24 @@
-#promedioNotas 
+#! Python3
+# Calculate grade point average
+
+# importing os for clear
+import os
+# importin sys to exit program
+import sys
+
+# initializa variables
 sw = 1
 listaNotas = []
 
+# menu
 print("Presione 1 para ingresar sus notas")
 print("Presione cualquier tecla para salir")
-op = int(input("Seleccione opción"))
+
+try:
+    op = int(input("Seleccione su opción\n> "))
+except ValueError:
+    print("Adiós")
+    sys.exit()
 
 if (op == 1):
     while sw == 1:

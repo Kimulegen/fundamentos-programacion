@@ -1,5 +1,5 @@
 #! Python3
-# count number of color ocurrences in multidimensional matrix
+# Count number of color ocurrences in multidimensional matrix
 
 # importing random to pick colors at random
 import random

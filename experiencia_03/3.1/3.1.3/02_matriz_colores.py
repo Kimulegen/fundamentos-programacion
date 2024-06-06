@@ -1,6 +1,14 @@
-import random
-colors = ('Amarillo', 'Rojo', 'Naranja', 'Verde', 'Blanco')
+#! Python3
+# count number of color ocurrences in multidimensional matrix
 
+# importing random to pick colors at random
+import random
+
+# initialize variables
+colors = ('Amarillo', 'Rojo', 'Naranja', 'Verde', 'Blanco')
+amarillo = rojo = naranja =  verde = blanco = 0
+
+# build matrix filled with colors at random
 matrix = []
 for i in range(3):
     row = []
@@ -11,8 +19,7 @@ for i in range(3):
         row.append(column)
     matrix.append(row)
             
-amarillo = rojo = naranja =  verde = blanco = 0
-
+# count ocurrence of colors, store it in counters
 for row in matrix:
     for column in row:
         for item in column:
@@ -28,6 +35,7 @@ for row in matrix:
                 case 'Blanco':
                     blanco += 1
 
+# show number of ocurrence of each color
 print('Número de elementos "amarillo":', amarillo)
 print('Número de elementos "rojo":', rojo)
 print('Número de elementos "naranja":', naranja)

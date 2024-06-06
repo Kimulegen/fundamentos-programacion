@@ -20,15 +20,19 @@ except ValueError:
     print("Adiós")
     sys.exit()
 
+# menu
 if op == 1:
     while sw == 1:
+        # handle error in case price is not an integer
         try:
             print("-" * 50)
             producto = input("Incorpore su producto, para salir, presione 0:\n> ")
             if producto != "0":
+                # append values to corresponding lists
+                valorSuper.append(int(input(f"Incorpore el valor de {producto}\n> ")))
                 listaSuper.append(producto)
-                valorSuper.append(int(input(f"Incorpore el valor del {producto}\n> ")))
                 os.system("cls||clear")
+                # print cart
                 print(" DETALLE BOLETA ".center(50, "="))
                 print(f"Productos comprados: {', '.join(listaSuper)}")
                 print(f"Cantidad de productos comprados: {len(listaSuper)}")
@@ -37,6 +41,7 @@ if op == 1:
                 print("Adiós")
                 sw = 0
         except ValueError:
-            print("Ingreso Erróneo")
+            os.system("cls||clear")
+            print("Valor del producto no válido")
 else:
     print("Adiós")

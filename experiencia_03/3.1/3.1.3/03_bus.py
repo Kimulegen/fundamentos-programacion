@@ -1,5 +1,5 @@
 #! Python3
-# print the sits of a bus
+# Print the sits of a bus
 
 # initialize variables
 bus = []

@@ -7,11 +7,10 @@ import os
 # initialize variables
 canasta = {}
 total = 0
-product = ''
 
 # main menu
 while True:
-    print('*'*15, 'Menú', '*'*15)
+    print(' Menú '.center(30,'='))
     print('1. Agregar productos')
     print('2. Ver canasta')
     print('3. Ver total')
@@ -22,7 +21,8 @@ while True:
     # add products feature
     if choice == '1':
         os.system('cls||clear')
-        print('Seleccione producto a agregar')
+        print('Seleccione producto a agregar'.center(29,'='))
+        print('='*29)
         print('1. Arroz $2350')
         print('2. Tallarines $1190')
         print('3. Aceite $2290')
@@ -31,35 +31,36 @@ while True:
         product = input('> ')
         print()
 
+        os.system('cls||clear')
         if product == '1':
             canasta.setdefault('arroz', 0)
             canasta['arroz'] += 1
             total += 2350
-            product = 'arroz'
+            print(f"arroz añadido con éxito")
         elif product == '2':
             canasta.setdefault('tallarines', 0)
             canasta['tallarines'] += 1
             total += 1190
-            product = 'tallarines'
+            print(f"tallarines añadido con éxito")
         elif product == '3':
             canasta.setdefault('aceite', 0)
             canasta['aceite'] += 1
             total += 2290
-            product = 'aceite'
-        if product == '4':
+            print(f"aceite añadido con éxito")
+        elif product == '4':
             canasta.setdefault('mermelada', 0)
             canasta['mermelada'] += 1
             total += 1450
-            product = 'mermelada'
-        if product == '5':
+            print(f"mermelada añadido con éxito")
+        elif product == '5':
             canasta.setdefault('cereal', 0)
             canasta['cereal'] += 1
             total += 2690
-            product = 'cereal'
-
-        os.system('cls||clear')
-        print(f"{product} añadido con éxito")
-        
+            print(f"cereal añadido con éxito")
+        else:
+            print('Opción inválida')
+        print()
+    
     # print all products feature
     elif choice == '2':
         os.system('cls||clear')
@@ -75,9 +76,10 @@ while True:
 
     # exit menu
     elif choice == '4':
+        print('Adiós')
         break
 
     # catch all in case user inputs invalid option
     else:
         os.system('cls||clear')
-        print("Error, opción inválida\n")
+        print('Error, opción inválida\n')

@@ -1,7 +1,15 @@
-names = []
-longest_name = ''
-for i in range(3):
-    name = input("Ingrese un nombre")
-    longest_name = name if len(name)>len(longest_name) else longest_name
+#! Python3
+# Ask for 3 names, return the longest
 
-print(f"El nombre mas largo es {longest_name}")
+# initialize variables
+names = []
+longest_name = ""
+
+# user inputs 3 names, store longest name
+for i in range(3):
+    name = input("Ingresa un nombre\n> ")
+    names.append(name)
+    longest_name = name if len(name) >= len(longest_name) else longest_name
+
+# print longest name
+print(f" el nombre más largo es : {longest_name}")

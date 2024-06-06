@@ -1,7 +1,7 @@
 #! Python3
 # Ask to user for names, then delete the shortest one
 
-#initializa variables
+#initialize variables
 names = []
 
 # adding names

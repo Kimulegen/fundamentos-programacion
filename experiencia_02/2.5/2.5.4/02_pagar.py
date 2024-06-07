@@ -1,8 +1,10 @@
+#! Python3
+# Pay options
+
+# menu
 while True:
     try:
-        print("*"*15, end="")
-        print("Menu", end="")
-        print("*"*15)
+        print(" Menú ".center(30, "="))
         print("1.- Pagar con tarjeta de crédito")
         print("2.- Pagar con con PayPal")
         print("3.- Pagar por transferencia")
@@ -29,11 +31,11 @@ while True:
         elif option == 2:
             user = input("Ingrese su usario: ")
             pwd = input("Ingrese su contraseña: ")
-            censored_pwd = "*"*len(pwd)
+            censored_pwd = "*" * len(pwd)
             print()
             print("Detalle compra")
             print(f"Costo de la compra: $100.000")
-            print(f"Usuario: {user}")   
+            print(f"Usuario: {user}")
             print(f"Contraseña: {censored_pwd}")
             print()
             print("Muchas gracias por su compra")

@@ -4,10 +4,10 @@
 # Variables y Tipos de Datos
 # Aquí, se han creado variables que almacenan un número entero,
 # un número decimal, una cadena de texto y un valor booleano.
-variable_entera = 42 # Entero
-variable_decimal = 3.14 # Decimal
-variable_texto = "Hola, mundo!" # Cadena de texto
-variable_booleana = True # Valor booleano
+variable_entera = 42  # Entero
+variable_decimal = 3.14  # Decimal
+variable_texto = "Hola, mundo!"  # Cadena de texto
+variable_booleana = True  # Valor booleano
 
 # Operadores
 # En este caso, resultado_suma almacena el resultado de
@@ -15,7 +15,7 @@ variable_booleana = True # Valor booleano
 # almacena el resultado de comparar si variable_entera es
 # mayor que variable_decimal.
 resultado_suma = variable_entera + variable_decimal
-comparacion = (variable_entera > variable_decimal)
+comparacion = variable_entera > variable_decimal
 
 # Entrada y Salida
 nombre_usuario = input("Por favor, ingresa tu nombre: ")
@@ -32,16 +32,18 @@ else:
 
 # Colecciones de Datos
 # Se crean listas, tuplas, diccionarios y conjuntos para almacenar datos
-lista_numeros = [1,2,3,4,5]
+lista_numeros = [1, 2, 3, 4, 5]
 tupla_colores = ("rojo", "verde", "azul")
-diccionario_edades = {"Juan":25, "Maria":30, "Carlos":22}
-conjunto_elementos = {1,2,3,4,5}
+diccionario_edades = {"Juan": 25, "Maria": 30, "Carlos": 22}
+conjunto_elementos = {1, 2, 3, 4, 5}
+
 
 # Funciones
 # Se define una función saludar() y se la utiliza para crear un
 # mensaje de saludo personalizado
 def saludar(nombre):
     return "¡Hola, " + nombre + "!"
+
 
 mensaje_saludo = saludar("Estudiante")
 
@@ -59,7 +61,9 @@ with open("archivo.txt", "w") as archivo:
 
 # Módulos y Bibliotecas
 import math
+
 raiz_cuadrada = math.sqrt(16)
+
 
 # Programación Orientada a Objetos
 class MiClase:
@@ -68,6 +72,7 @@ class MiClase:
 
     def mostrar_atributo(self):
         print("El valor del atributo es:", self.atributo)
+
 
 # Manejo de Cadenas (Strings)
 longitud_cadena = len("Python")

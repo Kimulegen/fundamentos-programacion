@@ -1,3 +1,6 @@
+#! Python3
+# Total ticket sales
+
 n_pasajes = int(input("¿Cuántos pasajes deseas vender? "))
 total_ingresos = 0
 

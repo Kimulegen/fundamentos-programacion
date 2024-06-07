@@ -1,3 +1,6 @@
+#! Python3
+# Bank simulator
+
 # Salso inicial en cuenta
 saldo = 100000
 # Loop principal del programa

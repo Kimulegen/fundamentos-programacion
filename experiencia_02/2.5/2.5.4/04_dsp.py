@@ -1,3 +1,6 @@
+#! Python
+# Digital signal processor simulator
+
 import time
 
 while True:
@@ -8,13 +11,13 @@ while True:
         espacios += " "
         linea = espacios + linea
         time.sleep(0.05)
-    
+
     for i in range(14):
         print(linea)
         espacios = " "
         linea = linea[i:]
         time.sleep(0.05)
-    
+
     linea = "*"
     espacio = " "
     for i in range(22):

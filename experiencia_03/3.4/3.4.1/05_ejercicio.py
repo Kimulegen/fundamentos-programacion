@@ -1,5 +1,5 @@
 #! Python
-# Demonstration of spread arguments
+# A price calculator function, exampre of unpacking operator
 
 
 def calculo(precio, descuento):

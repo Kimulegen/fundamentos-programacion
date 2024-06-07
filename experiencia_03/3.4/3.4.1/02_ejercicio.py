@@ -1,5 +1,9 @@
-def resta(a,b):
-    return a-b
+#! Python3
+# A rest function, example of keyword arguments
 
-resta(b=30,a=10) #-20
 
+def resta(a, b):
+    return a - b
+
+
+resta(b=30, a=10)  # -20

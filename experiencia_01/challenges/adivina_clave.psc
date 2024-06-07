@@ -4,12 +4,12 @@ Algoritmo sin_titulo
 	Definir clave_mostrada, unidad, decena, centena, u_millar, d_millar, digito, clave_str Como Caracter
 	clave_mostrada = "_ _ _ _ _"
 	
-	Escribir "Primer jugador: Ingresa una clave de 5 dígitos"
+	Escribir "Primer jugador: Ingresa una clave de 5 dÃ­gitos"
 	Leer clave
 	clave_str = ConvertirATexto(clave)
 	clave_lon = Longitud(clave_str)
 	Mientras clave_lon <> 5 Hacer
-		Escribir "Tiene que ser una clave de 5 dígitos!"
+		Escribir "Tiene que ser una clave de 5 dÃ­gitos!"
 		Leer clave
 		clave_str = ConvertirATexto(clave)
 		clave_lon = Longitud(clave_str)
@@ -23,15 +23,15 @@ Algoritmo sin_titulo
 	
 	i = 5
 	Mientras i >= 0 y adivinado = Falso Hacer
-		Escribir "Segundo Jugador: Ingrese un número que cree que estará en la clave"
+		Escribir "Segundo Jugador: Ingrese un nÃºmero que cree que estarÃ¡ en la clave"
 		Leer digito
 		
 		Si d_millar = digito Entonces
 			Si d_m = Verdadero Entonces
-				Escribir "ya adivinaste ese número!"
+				Escribir "ya adivinaste ese nÃºmero!"
 				i = i + 1
 			SiNo
-				Escribir "adivinaste un número!"
+				Escribir "adivinaste un nÃºmero!"
 				d_m = Verdadero
 				sub_str_1 = SUBCADENA(clave_mostrada, 2,10)
 				clave_mostrada = Concatenar(d_millar, sub_str_1)
@@ -41,10 +41,10 @@ Algoritmo sin_titulo
 		SiNo
 			Si u_millar = digito Entonces
 				Si u_m = Verdadero Entonces
-				Escribir "ya adivinaste ese número!"
+				Escribir "ya adivinaste ese nÃºmero!"
 				i = i + 1
 				Sino	
-					Escribir "adivinaste un número!"
+					Escribir "adivinaste un nÃºmero!"
 					u_m =Verdadero
 					sub_str_1 = Subcadena(clave_mostrada, 0, 2)
 					sub_str_2 = Subcadena(clave_mostrada, 4,10)
@@ -56,10 +56,10 @@ Algoritmo sin_titulo
 			SiNo
 				Si centena = digito  Entonces
 					Si c = Verdadero Entonces
-						Escribir "ya adivinaste ese número!"
+						Escribir "ya adivinaste ese nÃºmero!"
 						i = i + 1
 					Sino
-						Escribir "adivinaste un número!"
+						Escribir "adivinaste un nÃºmero!"
 						c = Verdadero
 						sub_str_1 = Subcadena(clave_mostrada, 0, 4)
 						sub_str_2 = Subcadena(clave_mostrada, 6,10)
@@ -71,11 +71,11 @@ Algoritmo sin_titulo
 				SiNo
 					Si decena = digito  Entonces
 						Si d = Verdadero Entonces
-							Escribir "ya adivinaste ese número!"
+							Escribir "ya adivinaste ese nÃºmero!"
 							i = i + 1
 						Sino
 							d = Verdadero
-							Escribir "adivinaste un número!"
+							Escribir "adivinaste un nÃºmero!"
 							sub_str_1 = Subcadena(clave_mostrada, 0, 6)
 							sub_str_2 = Subcadena(clave_mostrada, 8,10)
 							clave_mostrada = Concatenar(sub_str_1, decena)
@@ -86,18 +86,18 @@ Algoritmo sin_titulo
 					SiNo
 						Si unidad = digito Entonces
 							Si u = Verdadero Entonces
-								Escribir "ya adivinaste ese número!"
+								Escribir "ya adivinaste ese nÃºmero!"
 								i = i + 1
 							Sino
 								u = Verdadero
-								Escribir "adivinaste un número!"
+								Escribir "adivinaste un nÃºmero!"
 								sub_str_1 = Subcadena(clave_mostrada, 0, 8)
 								clave_mostrada = Concatenar(sub_str_1, unidad)
 								Escribir clave_mostrada
 								Escribir "Te quedan ", i, " intentos"
 							FinSi
 						SiNo
-							Escribir "Ese número no está en la clave!"
+							Escribir "Ese nÃºmero no estÃ¡ en la clave!"
 							Escribir "Te quedan ", i, " intentos"
 						FinSi
 					FinSi
@@ -110,7 +110,7 @@ Algoritmo sin_titulo
 			adivinado = Verdadero
 		SiNo
 			Si i = 0 y adivinado = Falso Entonces
-				Escribir "No lograste adivinar el número secreto, el número buscado era: ", clave
+				Escribir "No lograste adivinar el nÃºmero secreto, el nÃºmero buscado era: ", clave
 			FinSi
 		FinSi
 	i = i - 1

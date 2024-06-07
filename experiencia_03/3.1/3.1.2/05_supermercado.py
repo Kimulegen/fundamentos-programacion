@@ -1,7 +1,6 @@
 #! Python3
 # Supermarket simulator, where you can add products, see your products and see the total cost of the purchase
 
-# importing os to use clear
 import os
 
 # initialize variables

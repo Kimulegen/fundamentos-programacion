@@ -1,7 +1,6 @@
 #! Python3
 # Calculate grade point average
 
-# importing os for clear
 import os
 
 # importin sys to exit program

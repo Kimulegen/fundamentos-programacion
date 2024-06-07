@@ -1,7 +1,6 @@
 #! Python3
 # Menu where user can sign in, add and delete users
 
-# importing os to use clear
 import os
 
 # initialize variables

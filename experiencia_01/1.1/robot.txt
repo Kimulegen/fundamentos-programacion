@@ -1,6 +1,6 @@
 prenderse
 activar sensores
-hacer un autodiagnostico
+hacer un autodiagnóstico
 existe problema?
 	(si) arreglar problema
 		generar reporte
@@ -12,7 +12,7 @@ hay algo fuera de lugar?
 	(no) continuar con rutina
 
 revisar status de habitantes de la casa
-estan dormidos?
+están dormidos?
 (si) despertar a los habitantes de la casa
 (no) continuar con rutina
 
@@ -20,18 +20,18 @@ revisar estado del agua en la casa
 hay agua caliente?
 (si) preparar bano y utensilios para ducharse
 (no) diagnosticar problema
-	es la caneria?
-	(si) identificar lugar de averia
-		reunir herramientas para arreglar averia
-		reparar averia
+	es la canería?
+	(si) identificar lugar de avería
+		reunir herramientas para arreglar avería
+		reparar avería
 		comprobar estado del agua
 	(no) es el calefont?
-		(si) son las baterias?
-			(si) hay baterias de repuesto?
-				(si) reemplazar baterias
+		(si) son las baterías?
+			(si) hay baterías de repuesto?
+				(si) reemplazar baterías
 					comprobar estado del agua
-				(no) comprar baterias (revisar dinero?)
-					reemplazar baterias
+				(no) comprar baterías (revisar dinero?)
+					reemplazar baterías
 					comprobar estado del ague
 			(no) 	revisar status del calefont
 				el problema es reparable?
@@ -46,10 +46,10 @@ ir a la cocina
 hervir agua
 reunir ingredientes para comer
 
-estan todos los ingredientes?
+están todos los ingredientes?
 (si) preparar desayuno
 (no) revisar dinero
 	- hay dinero?
 	(si) ir a comprar ingredientes
-	(no) pedir dinero a duenos
+	(no) pedir dinero a dueños
 

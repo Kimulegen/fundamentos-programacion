@@ -3,23 +3,23 @@ Algoritmo adivina_numero
 	Definir acertado Como Logico
 	numero_adivinar = Aleatorio(1,100);
 	
-	Escribir "Ingrese el numero de intentos que desea tener"
+	Escribir "Ingrese el número de intentos que desea tener"
 	Leer intentos
 	
 	Mientras intentos > 0 y acertado == Falso Hacer
-		Escribir "Ingrese un numero"
+		Escribir "Ingrese un número"
 		Leer intento_usuario
 		Si intento_usuario == numero_adivinar Entonces
-			Escribir "�felicitaciones, acertaste el numero!"
+			Escribir "¡felicitaciones, acertaste el número!"
 			acertado = Verdadero
 		SiNo
-			Escribir "numero incorrecto, �intenta de nuevo!"
+			Escribir "número incorrecto, ¡intenta de nuevo!"
 			intentos = intentos - 1
 		FinSi
 	FinMientras
 	
 	Si numero_adivinar <> intento_usuario Entonces
-		Escribir "El numero a adivinar era: ", numero_adivinar
+		Escribir "El número a adivinar era: ", numero_adivinar
 	FinSi
 	
 FinAlgoritmo

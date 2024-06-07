@@ -3,11 +3,11 @@ Algoritmo contador_cuadrados
 	Definir contador, cuadrado, limite Como Entero
 	contador = 1
 	
-//	Solicitar al usuario que ingrese un número
-	Escribir "Ingrese un número"
+//	Solicitar al usuario que ingrese un nÃºmero
+	Escribir "Ingrese un nÃºmero"
 	Leer limite
 	
-//	Realizar la repetición
+//	Realizar la repeticiÃ³n
 	Mientras contador <= limite Hacer
 //		Calcular el cuadrado
 		cuadrado = contador * contador

@@ -15,7 +15,7 @@ Algoritmo Receta_Robot
 	Escribir 'Prenderse'
 	Escribir 'Activar sensores'
 	Escribir 'Realizar Autodiagnostico'
-	Escribir '¿Problema detectado?: Si, No'
+	Escribir 'Â¿Problema detectado?: Si, No'
 	// generar internamente una respuesta a la pregunta y guardar en la variable "prom_detect"
 	Leer prom_detect
 	Si prom_detect='Si' Entonces
@@ -52,12 +52,12 @@ Algoritmo Receta_Robot
 	// generar respuesta interna en la variable "agu_cal"
 	Leer agu_cal
 	Si agu_cal='Si' Entonces
-		Escribir 'Preparar baño y utensilios de baño'
+		Escribir 'Preparar baÃ±o y utensilios de baÃ±o'
 		Escribir 'Continuar con la rutina'
 	SiNo
 		Escribir 'Diagnosticar Problema'
-		Escribir 'Es la cañeria?: Si, No'
-		// generar respuesta en variable "cañeria"
+		Escribir 'Es la caÃ±eria?: Si, No'
+		// generar respuesta en variable "caÃ±eria"
 		Leer caneria
 		Si caneria='Si' Entonces
 			Escribir 'Reunir herramientas de reparacion'
@@ -94,7 +94,7 @@ Algoritmo Receta_Robot
 						Escribir 'Verificar agua caliente'
 						Escribir 'Continuar con rutina'
 					SiNo
-						Escribir 'Comprobar que haya gas en el balon o cañerias'
+						Escribir 'Comprobar que haya gas en el balon o caÃ±erias'
 						Escribir 'Agendar hora con gasfiter'
 						Escribir 'Sugerir usar solo agua helada'
 						Escribir 'Continuar con rutina'
@@ -134,7 +134,7 @@ Algoritmo Receta_Robot
 		Si dinero_desay='Si' Entonces
 			Escribir 'Ir a comprar ingredientes'
 		SiNo
-			Escribir 'Pedir dinero a dueños'
+			Escribir 'Pedir dinero a dueÃ±os'
 			Escribir 'Dieron dinero?: Si, No'
 			// generar respuesta en variable dar_dinero
 			Leer dar_dinero
@@ -160,7 +160,7 @@ Algoritmo Receta_Robot
 	Escribir 'Excelente'
 	Limpiar Pantalla
 	Escribir 'Retirar cosas de la mesa'
-	Escribir 'Despedir dueños'
+	Escribir 'Despedir dueÃ±os'
 	Escribir 'Ordenar casa'
 	Esperar 3 Segundos
 	Limpiar Pantalla
@@ -172,7 +172,7 @@ Algoritmo Receta_Robot
 		Escribir 'Cocinar'
 	SiNo
 		Escribir 'Ir a Comprar'
-		Escribir 'Me encontré con la vecina?: Si, No'
+		Escribir 'Me encontrÃ© con la vecina?: Si, No'
 		// generar respuesta en variable "copucha"
 		Leer copucha
 		Si copucha='Si' Entonces
@@ -184,7 +184,7 @@ Algoritmo Receta_Robot
 	FinSi
 	Esperar 3 Segundos
 	Limpiar Pantalla
-	Escribir 'Recibir a los niños del colegio'
+	Escribir 'Recibir a los niÃ±os del colegio'
 	Escribir 'Pedirles que se cambien de ropa y se laven las manos'
 	Escribir 'Servirles comida'
 	Repetir
@@ -196,8 +196,8 @@ Algoritmo Receta_Robot
 	Escribir 'Excelente'
 	Esperar 3 Segundos
 	Limpiar Pantalla
-	Escribir 'Ordenar a los niños hacer sus labores'
-	Escribir 'Los niños quieren hacer sus labores?: Si, No'
+	Escribir 'Ordenar a los niÃ±os hacer sus labores'
+	Escribir 'Los niÃ±os quieren hacer sus labores?: Si, No'
 	// generar respuesta en variable "ninos_no_tarea"
 	Leer ninos_no_tarea
 	Si ninos_no_tarea='No' Entonces
@@ -209,7 +209,7 @@ Algoritmo Receta_Robot
 	FinSi
 	Esperar 3 Segundos
 	Limpiar Pantalla
-	Escribir 'Recibir a los dueños'
+	Escribir 'Recibir a los dueÃ±os'
 	Escribir 'Pedirles que se laven las manos y se preparen para la cena'
 	Escribir 'Servir comida'
 	Repetir
@@ -223,8 +223,8 @@ Algoritmo Receta_Robot
 	Esperar 3 Segundos
 	Limpiar Pantalla
 	Escribir 'Prepara habitaciones para el descanso'
-	Escribir 'Reportar a dueños lo acontecido del dia'
-	Escribir 'Tarea especial o extra para mañana?: Si, No'
+	Escribir 'Reportar a dueÃ±os lo acontecido del dia'
+	Escribir 'Tarea especial o extra para maÃ±ana?: Si, No'
 	// generar respuesta en variable tar_extra
 	Leer tar_extra
 	Si tar_extra='Si' Entonces

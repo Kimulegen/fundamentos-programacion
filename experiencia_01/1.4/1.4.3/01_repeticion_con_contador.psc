@@ -3,15 +3,15 @@ Algoritmo repeticion_con_contador
 	Definir contador como Entero
 	contador = 1
 	
-//	Solicitar al usuario que ingrese un número
-	Escribir "Ingrese un número"
+//	Solicitar al usuario que ingrese un nÃºmero
+	Escribir "Ingrese un nÃºmero"
 	Definir limite Como Entero
 	Leer limite
 	
-//	Realizar la repetición mientras el contador sea menor o igual que el número ingresado
+//	Realizar la repeticiÃ³n mientras el contador sea menor o igual que el nÃºmero ingresado
 	Mientras (contador <= limite) Hacer
 		Escribir "Contador: ", contador
-//		Incrementar el contador en cada iteración
+//		Incrementar el contador en cada iteraciÃ³n
 		contador = contador + 1
 	FinMientras
 FinAlgoritmo

@@ -1,13 +1,16 @@
 # Bubble sort algorithm
 
-## Mi respuesta
 ```python
+# generate a list of random number
 import random
 
 lista = []
 for i in range(1000):
     lista.append(random.randint(1, 10000))
+```
 
+## Mi respuesta
+```python
 for i in range(len(lista) - 1):
     for j in range(i, -1, -1):
         if lista[j + 1] < lista[j]:
@@ -18,7 +21,8 @@ for i in range(len(lista) - 1):
             break
 ```
 
-# MIO TAMBIEN
+## Alternativa a mi respuesta
+```python
 for i in range(len(lista) - 1):
     for j in range(0, i + 1):
         if lista[i - j + 1] < lista[i - j]:
@@ -27,8 +31,10 @@ for i in range(len(lista) - 1):
             lista[i - j + 1] = tmp
         else:
             break
+```
 
-# ALGO EJERCICIO
+## Pregunta Guía
+```python
 import random
 
 arreglo = []
@@ -57,31 +63,44 @@ if largo_arreglo % 2 == 0:
 else:
     mediana = arreglo[round(int(largo_arreglo / 2))]
 print("Mediana: ", mediana)
+```
 
-# OPCION 1
+
+### OPCION 1
+```python
 for i in range(largo_arreglo - 1):
     for j in range(largo_arreglo - 1 - i):
         if arreglo[j] < arreglo[j + 1]:
             temporal = arreglo[j]
             arreglo[j] = arreglo[j + 1]
             arreglo[j + 1] = temporal
-# OPCION 2
+```
+
+### OPCION 2
+```python
 for i in range(largo_arreglo - 1):
     for j in range(largo_arreglo - 1 - i):
         if arreglo[j] > arreglo[j + 1]:
             arreglo[j] = arreglo[j + 1]
             arreglo[j + 1] = arreglo[j]
-# OPCION 3
+```
+
+### OPCION 3
+```python
 for i in range(largo_arreglo - 1):
     for j in range(largo_arreglo - 1 - i):
         if arreglo[j] < arreglo[j + 1]:
             temporal = arreglo[j]
             arreglo[j] = arreglo[j + 1]
             arreglo[j + 1] = arreglo[j]
-# OPCION 4 (solucion)
+```
+
+### OPCION 4 (SOLUCIÓN)
+```python
 for i in range(largo_arreglo - 1):
     for j in range(largo_arreglo - 1 - i):
         if arreglo[j] > arreglo[j + 1]:
             temporal = arreglo[j]
             arreglo[j] = arreglo[j + 1]
             arreglo[j + 1] = temporal
+```

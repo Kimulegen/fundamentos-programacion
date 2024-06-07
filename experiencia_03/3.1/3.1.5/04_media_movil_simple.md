@@ -4,10 +4,12 @@
 ```python
 import random
 
+# generate prices list
 precios = []
 for i in range(50):
     precios.append(random.randint(25,200))
 
+# calculate simple moving average 
 periodos= 3
 medias = []
 for i in range(len(precios)-periodos+1):

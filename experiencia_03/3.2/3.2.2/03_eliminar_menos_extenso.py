@@ -1,7 +1,6 @@
 #! Python3
 # Ask for names, remove the shortest one
 
-# importing os for clear
 import os
 
 # initialize variables

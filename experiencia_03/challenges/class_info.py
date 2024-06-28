@@ -16,7 +16,7 @@ def calcular_nota(p1, p2, p3):
 
 
 # funcion que calcula el porcentaje de asistencia
-def calcular_asistencia(asistencia):
+def aprobo_asistencia(asistencia):
     # primero hay que transformar los "numeros" de string a int
     asistencia_int = tuple(map(int, asistencia))
 
@@ -93,11 +93,12 @@ def main():
         print("1. Añadir estudiante")
         print("2. Guardar clase")
         print("3. Obtener promedio clase")
-        print("4. Salir")
+        print("4. Ver si un estudiante aprobo por asistencia")
+        print("5. Salir")
 
         try:
             opcion = int(input("\nIngresa una opción\n> "))
-            if opcion < 1 or opcion > 4:
+            if opcion < 1 or opcion > 5:
                 raise ValueError
         except ValueError:
             print("\nOpción no válida\n")
@@ -113,6 +114,26 @@ def main():
             nombre_archivo = input("Ingresa el nombre del archivo a leer\n> ")
             promedio = calcular_promedio_clase(nombre_archivo)
             print(f"El promedio de la clase es {promedio}")
+        elif opcion == 4:
+            nombre_archivo = input("Ingresa el nombre del archivo a leer\n> ")
+            nombre_estudiante = input("Ingresa el nombre del estudiante a buscar\n> ")
+            with open(f"{nombre_archivo}.csv", "r") as csv_archivo:
+                lector_csv = csv.reader(csv_archivo)
+
+                estudiante = [
+                    estudiante
+                    for estudiante in lector_csv
+                    if estudiante[0] == nombre_estudiante
+                ]
+
+                if not len(estudiante):
+                    print("No se encontró un estudiante con ese nombre")
+
+                else:
+                    if aprobo_asistencia(estudiante[0][4:]):
+                        print("El estudiante aprobó por asistencia")
+                    else:
+                        print("El estudiante reprobó por asistencia")
         else:
             print("Saliendo del programa...")
             break

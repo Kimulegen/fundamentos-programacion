@@ -87,6 +87,7 @@ def calcular_promedio_clase(nombre_archivo):
         return promedio_clase
 
 
+# menu principal
 def main():
     while True:
         print(" Menu ".center(30, "="))
@@ -96,6 +97,8 @@ def main():
         print("4. Ver si un estudiante aprobo por asistencia")
         print("5. Salir")
 
+        # leer la opcion del usuario, si no ingresa un numero o si
+        # ingresa un numero fuera de rango tira un error
         try:
             opcion = int(input("\nIngresa una opción\n> "))
             if opcion < 1 or opcion > 5:
@@ -104,36 +107,51 @@ def main():
             print("\nOpción no válida\n")
             continue
 
+        # añadir un estudiante a la clase
         if opcion == 1:
             estudiante = input("Ingresa la información del estudiante\n> ")
             clase.append(estudiante)
+
+        # guardar la clase a un archivo
         elif opcion == 2:
             nombre_archivo = input("Ingresa el nombre del archivo a guardar\n> ")
             guardar_clase(nombre_archivo, clase)
+
+        # obtener el promedio de la clase
         elif opcion == 3:
             nombre_archivo = input("Ingresa el nombre del archivo a leer\n> ")
             promedio = calcular_promedio_clase(nombre_archivo)
             print(f"El promedio de la clase es {promedio}")
+
+        # buscar un estudiante y comprobar si aprobó o no por asistencia
         elif opcion == 4:
             nombre_archivo = input("Ingresa el nombre del archivo a leer\n> ")
             nombre_estudiante = input("Ingresa el nombre del estudiante a buscar\n> ")
+
+            # leemos el archivo
             with open(f"{nombre_archivo}.csv", "r") as csv_archivo:
                 lector_csv = csv.reader(csv_archivo)
 
+                # buscamos el estudiante
                 estudiante = [
                     estudiante
                     for estudiante in lector_csv
                     if estudiante[0] == nombre_estudiante
                 ]
 
+                # comprobamos si existe el estudiante en la clase o no
                 if not len(estudiante):
                     print("No se encontró un estudiante con ese nombre")
 
+                # si existe el estudiante calcula si el estudiante aprobó
+                # sacando la información de la asistencia de la lista
                 else:
                     if aprobo_asistencia(estudiante[0][4:]):
                         print("El estudiante aprobó por asistencia")
                     else:
                         print("El estudiante reprobó por asistencia")
+
+        # salir del programa
         else:
             print("Saliendo del programa...")
             break

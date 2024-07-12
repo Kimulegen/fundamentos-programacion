@@ -1,0 +1,11 @@
+nombre,cargo,sueldo,descuento_salud,descuento_afp,sueldo_liquido
+Juan Pérez,Consultor TI,600000,420000,72000,108000
+María García,Analista,2200000,1540000,264000,396000
+Carlos López,Programador,1700000,1190000,204000,306000
+Ana Martínez,Jefe de Proyecto,800000,560000,96000,144000
+Pedro Rodríguez,Consultor TI,2300000,1610000,276000,414000
+Laura Hernández,Analista,2300000,1610000,276000,414000
+Miguel Sánchez,Programador,2300000,1610000,276000,414000
+Isabel Gómez,Jefe de Proyecto,2200000,1540000,264000,396000
+Francisco Díaz,Consultor TI,2000000,1400000,240000,360000
+Elena Fernández,Analista,1500000,1050000,180000,270000

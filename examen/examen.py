@@ -114,8 +114,8 @@ def main(trabajadores:list) -> None:
             generar_reporte(trabajadores)
         else:
             print("Finalizando programa...")
-            print("Desarrollado por Oscar Muñoz")
-            print("RUT 18.295.080-7")
+            print("Desarrollado por Kimulegen")
+            print("RUT --.---.-----")
             break
         
 if __name__ == "__main__":

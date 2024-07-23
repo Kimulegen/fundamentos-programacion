@@ -21,4 +21,4 @@ Ejercicios de programación para el curso Fundamentos de Programacion (FPY1101) 
 3. Uso de archivos en Python
 4. Funciones en Python
 5. Desarrollo colaborativo con GitHub y Python
-6. Consolidadndo Experiencia 3
+6. Consolidando Experiencia 3
